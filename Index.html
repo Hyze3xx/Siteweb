@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo Martin - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Hugo Martin</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle">🌙</button>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <div class="hero-text">
+            <h2>Welcome to My Portfolio</h2>
+            <p>MSc in International Business | Passionate about Digital Marketing & Events</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <img src="photo/photo.jpg" alt="Hugo">
+        <div>
+            <h2>About Me</h2>
+            <p>Currently pursuing a Master's in International Business at Kedge Bordeaux. I have experience in event management, digital marketing, and SEO. Passionate about sports, music, and innovation.</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-card">
+            <h3>Community Manager | SEO Assistant</h3>
+            <p>Managed digital marketing for Art Trope Gallery, developed content, and enhanced SEO performance.</p>
+        </div>
+        <div class="experience-card">
+            <h3>Events Sales Assistant</h3>
+            <p>Organized the Dafy Tour 2023 and contributed to event planning and management.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="gallery">
+            <div class="project">
+                <img src="projet1.jpg" alt="Project 1">
+                <p>Marketing Campaign Analysis</p>
+            </div>
+            <div class="project">
+                <img src="projet2.jpg" alt="Project 2">
+                <p>SEO Strategy Development</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:hugomp253@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hugo Martin - All rights reserved</p>
+    </footer>
+
+    <script>
+        document.getElementById('theme-toggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
